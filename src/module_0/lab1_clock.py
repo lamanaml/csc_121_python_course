@@ -1,4 +1,6 @@
-time = 17416044400
-timezone = "US/Eastern"
+def main():
+    alarm = "1741604700"
+    timezone = "US/Eastern"
+    print(f"{alarm} in {timezone}")
 
-print(time, "in", timezone)
+main()
