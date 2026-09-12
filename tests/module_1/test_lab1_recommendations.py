@@ -23,7 +23,9 @@ def run_main(monkeypatch, capsys, responses):
 
 def test_difficult_multiplayer_recommends_poker(monkeypatch, capsys):
     out = run_main(monkeypatch, capsys, ["Difficult", "Multiplayer"])
-    assert hasattr(sys.modules[MODULE_NAME], "main"), "boolean_expressions.py has no main() function. File may be blank"
+    assert hasattr(sys.modules[MODULE_NAME], "main"), (
+        "lab1_recommendations.py has no main() function. File may be blank"
+    )
     assert out == "You might like Poker\n"
 
 
