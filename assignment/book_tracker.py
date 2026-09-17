@@ -15,13 +15,13 @@ def add_book():
     pages = int(input("How many pages? "))
     hours =  estimate_reading_time(pages)
     print(f"Your book has been submitted\n___________")
-    dashboard()
     print(f"Book Title: {title}\nAuthor: {author}\nPage Count {pages}")
     print(f"\nBook Added:\n")
     print(f"  '{title}' by {author} -- approx. {hours} hours to read")
         
 def main():
     add_book()
+    dashboard()
     
 if __name__ == "__main__":
     main()
