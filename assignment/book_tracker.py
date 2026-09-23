@@ -12,7 +12,7 @@ def show_menu(library):
             # (i = i +1, but I tried several ways and could not get it to work), so I took the easy way out.
             num = 1
             for book in library:
-                print(f"{num}. '{book['title']}' - {book['author']} ({book['pages']} pages - appox. {book['hours']} hours to read) ")
+                print(f"{num}. '{book['title']}' - {book['author']} ({book['pages']} pages - approx. {book['hours']} hours to read) ")
                 num = num + 1
                 show_menu(library)
         else:
@@ -52,7 +52,7 @@ def add_book(library):
     print(f"Your book has been submitted\n___________")
     print(f"Book Title: {book['title']}\nAuthor: {book['author']} \nPage Count {book['pages']}")
     print(f"\nBook Added:\n")
-    print(f"'{book['title']}', by {book['author']} -- appox. {book['hours']} hours to read) ")
+    print(f"'{book['title']}', by {book['author']} -- approx. {book['hours']} hours to read) ")
     show_menu(library)
          
 def main():
