@@ -50,18 +50,14 @@ def add_book(library):
         } 
     library.append(book)
     print(f"Your book has been submitted\n___________")
-    print(f"Book Title: {book['title']}\nAuthor: {book['author']} \nPage Count {book['pages']}")
+    print(f"Book Title: {title}\nAuthor: {author}\nPage Count {pages}")
     print(f"\nBook Added:\n")
     print(f"'{book['title']}', by {book['author']} -- approx. {book['hours']} hours to read) ")
     show_menu(library)
          
 def main():
-    library = []
+    add_book()
     dashboard()
-    show_menu(library)
-    
-    
-    
     
 if __name__ == "__main__":
     main()
