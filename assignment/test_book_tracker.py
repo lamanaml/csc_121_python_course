@@ -50,5 +50,5 @@ def test_format_book_comma_in_title():
         "hours": 10.9
     }
     # assert that format_book(book, 2) returns the line starting with "2. "
-    assert format_book(book, 2) == ("2. ")
+    assert format_book(book, 2)[:3] == ("2. ")
 
